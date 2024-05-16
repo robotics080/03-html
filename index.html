@@ -31,22 +31,79 @@
     </head>
     <body>
         <form>
-            <label for="name">이름</label>
-            <input type="text" name="name" id="name" />
-            <br />
-            <input type="radio" name="color" id="red" />
-            <label for="red">빨강</label>
-            <input type="radio" name="color" id="blue" />
-            <label for="blue">파랑</label>
-            <input type="radio" name="color" id="yellow" />
-            <label for="yellow">노랑</label>
-            <br />
-            <input type="checkbox" name="agree" id="agree" />
-            <label for="agree">동의합니다</label>
+            <fieldset>
+                <legend>폼 캡션</legend>
+                <label for="name">이름</label>
+                <input required type="text" value="배재혁" readonly name="name" id="name" autocomplete="on" />
+                <br />
+                <label for="email">이메일</label>
+                <input required autofocus type="email" placeholder="mail@mail.com" name="eamil" id="email" />
+                <br />
+                <label for="password">비밀번호</label>
+                <input
+                    required
+                    type="password"
+                    placeholder="문자, 숫자, 특수문자 포함 10자 이상"
+                    name="password"
+                    id="password"
+                />
+                <br />
+                <label for="tel">핸드폰 번호</label>
+                <input type="tel" value="01012345678" maxlength="11" name="tel" id="tel" />
+                <br />
+                <label for="url">URL</label>
+                <input type="url" disabled name="url" id="url" />
+                <br />
+                <label for="file">파일</label>
+                <input type="file" name="file" id="file" />
+                <br />
+                <input type="radio" name="color" id="red" />
+                <label for="red">빨강</label>
+                <input type="radio" name="color" id="blue" />
+                <label for="blue">파랑</label>
+                <input type="radio" name="color" id="yellow" />
+                <label for="yellow">노랑</label>
+                <br />
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree">동의합니다</label>
+                <br />
+                <label for="fruit">선호 과일</label>
+                <select name="fruit" id="fruit">
+                    <option value="apple">apple</option>
+                    <option value="melon">melon</option>
+                </select>
+                <br />
+                <br />
+                <textarea name="message" id="message" rows="10"> </textarea>
+
+                <br />
+                <input type="reset" value="취소" />
+                <input type="submit" value="전송" />
+                <br />
+                <label for="search">검색</label>
+                <input type="search" name="search" id="search" />
+                <button>검색</button>
+            </fieldset>
         </form>
 
         <br />
         <br />
+
+        <video controls autoplay muted>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" />
+        </video>
+        <br />
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/FhA37Sw4j8w?si=1sv5cUJtQWY6huXZ?controls=0&autoplay=1&mute=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+
         <div class="wrap">
             <header>
                 <h1>
